@@ -8,7 +8,7 @@ public class Main {
 		byte posicion;
 		String[] nombresPersonas = new String[5];
 		for (int i = 0; i < nombresPersonas.length; i++) {
-			System.out.println("Ingresa una palabra para la posicion "+i);
+			System.out.println("Ingresa un nombre para la posicion "+i);
 			nombresPersonas[i]= scanner.next();
 		}
 		while (num<nombresPersonas.length) {
