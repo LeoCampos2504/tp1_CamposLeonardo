@@ -94,6 +94,7 @@ public class Main {
             Jugador jugador = new Jugador(nombre, apellido, fechaNacimiento, nacionalidad, estatura, peso, posicion);
             jugadores.add(jugador);
             
+        scanner.close();
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error al intentar dar de alta al jugador. Por favor, intente nuevamente.");
             e.printStackTrace();
@@ -129,7 +130,7 @@ public class Main {
             if (!jugadorEncontrado) {
                 System.out.println("No se encontró un jugador con el nombre y apellido proporcionados.");
             }
-           
+           scanner.close();
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error al intentar mostrar los datos del jugador. Por favor, intente nuevamente.");
             e.printStackTrace();
@@ -204,7 +205,7 @@ public class Main {
             if (!jugadorEncontrado) {
                 System.out.println("No se encontró un jugador con el nombre y apellido proporcionados.");
             }
-            
+            scanner.close();
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error al intentar modificar los datos del jugador. Por favor, intente nuevamente.");
             e.printStackTrace();
@@ -236,7 +237,7 @@ public class Main {
             if (!jugadorEncontrado) {
                 System.out.println("No se encontró un jugador con el nombre y apellido proporcionados.");
             }
-            
+            scanner.close();
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error al intentar eliminar al jugador. Por favor, intente nuevamente.");
             e.printStackTrace();
@@ -265,7 +266,7 @@ public class Main {
                                      .count();
 
             System.out.println("Cantidad de jugadores de la nacionalidad " + nacionalidad + ": " + cantidad);
-       
+       scanner.close();
         } catch (Exception e) {
             System.out.println("Ha ocurrido un error al intentar mostrar la cantidad de jugadores por nacionalidad. Por favor, intente nuevamente.");
             e.printStackTrace();
