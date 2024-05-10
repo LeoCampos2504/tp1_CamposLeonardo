@@ -36,7 +36,7 @@ public class Main {
 			System.out.println("El nombre en la posicion "+num+" es: "+nombresPersonas[num]);
 			num++;
 		}
-		
+		scanner.close();
 	}
 
 }
