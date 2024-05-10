@@ -115,7 +115,7 @@ public class Main {
                 if (jugador.getNombre().equals(nombre) && jugador.getApellido().equals(apellido)) {
                     System.out.println("Nombre: " + jugador.getNombre());
                     System.out.println("Apellido: " + jugador.getApellido());
-                    System.out.println("Fecha de nacimiento: " + jugador.getFechaNacimiento());
+                    System.out.println("Fecha de nacimiento: " + jugador.getFechNacimiento());
                     System.out.println("Nacionalidad: " + jugador.getNacionalidad());
                     System.out.println("Estatura: " + jugador.getEstatura());
                     System.out.println("Peso: " + jugador.getPeso());
@@ -143,7 +143,7 @@ public class Main {
             for (Jugador jugador : jugadores) {
                 System.out.println("Nombre: " + jugador.getNombre());
                 System.out.println("Apellido: " + jugador.getApellido());
-                System.out.println("Fecha de nacimiento: " + jugador.getFechaNacimiento());
+                System.out.println("Fecha de nacimiento: " + jugador.getFechNacimiento());
                 System.out.println("Nacionalidad: " + jugador.getNacionalidad());
                 System.out.println("Estatura: " + jugador.getEstatura());
                 System.out.println("Peso: " + jugador.getPeso());
@@ -180,7 +180,7 @@ public class Main {
                     String fechaNacimientoStr = scanner.nextLine();
                     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                     LocalDate fechaNacimiento = LocalDate.parse(fechaNacimientoStr, formatter);
-                    jugador.setFechaNacimiento(fechaNacimiento);
+                    jugador.setFechNacimiento(fechaNacimiento);
 
                     System.out.println("Ingrese la nueva nacionalidad del jugador:");
                     jugador.setNacionalidad(scanner.nextLine());

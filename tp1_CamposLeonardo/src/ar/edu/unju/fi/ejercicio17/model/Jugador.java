@@ -6,16 +6,16 @@ import java.time.Period;
 public class Jugador {
     private String nombre;
     private String apellido;
-    private LocalDate fechaNacimiento;
+    private LocalDate fechNacimiento;
     private String nacionalidad;
     private double estatura;
     private double peso;
     private String posicion;
 
-    public Jugador(String nombre, String apellido, LocalDate fechaNacimiento, String nacionalidad, double estatura, double peso, String posicion) {
+    public Jugador(String nombre, String apellido, LocalDate fechNacimiento, String nacionalidad, double estatura, double peso, String posicion) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
+        this.fechNacimiento = fechNacimiento;
         this.nacionalidad = nacionalidad;
         this.estatura = estatura;
         this.peso = peso;
@@ -38,12 +38,12 @@ public class Jugador {
         this.apellido = apellido;
     }
 
-    public LocalDate getFechaNacimiento() {
-        return fechaNacimiento;
+    public LocalDate getFechNacimiento() {
+        return fechNacimiento;
     }
 
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    public void setFechNacimiento(LocalDate fechaNacimiento) {
+        this.fechNacimiento = fechaNacimiento;
     }
 
     public String getNacionalidad() {
@@ -79,6 +79,6 @@ public class Jugador {
     }
 
     public int calcularEdad() {
-        return Period.between(this.fechaNacimiento, LocalDate.now()).getYears();
+        return Period.between(this.fechNacimiento, LocalDate.now()).getYears();
     }
 }
